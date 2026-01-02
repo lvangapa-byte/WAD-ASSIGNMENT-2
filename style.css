@@ -1,0 +1,139 @@
+/* Point 1: External CSS Styles */
+
+/* Base Reset & Fonts */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f7f6;
+    background-image: radial-gradient(#007366 0.75px, transparent 0.75px);
+    background-size: 24px 24px;
+    color: #333;
+}
+
+/* Point 2: ID Selector - Styles the main header uniquely */
+#main-header {
+    background: linear-gradient(135deg, #007366, #005a4e);
+    /* Modern Gradient */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    /* Point 3: Text Alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#main-header h1 {
+    font-family: 'Poppins', sans-serif;
+    /* Premium Font */
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+/* Point 2: Class Selector - Styles the introduction section */
+/* Point 5: Background styling (Color) */
+.intro {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    /* Soft Shadow */
+    text-align: center;
+}
+
+/* Point 3: Styling Text (Fonts) */
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #007366;
+    margin-bottom: 20px;
+    font-size: 2em;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #E33A0C;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Event Grid Layout */
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    /* Premium Shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.event-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+    color: #007366;
+    font-size: 1.25em;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #7f8c8d;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007366;
+    color: white;
+    font-size: 14px;
+    margin-top: 50px;
+}
